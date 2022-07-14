@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: red;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DashBoardController">
+   <children>
+      <ImageView fitHeight="919.0" fitWidth="1200.0" layoutY="-14.0" opacity="0.7" pickOnBounds="true">
+         <image>
+            <Image url="@../Assets/istockphoto-470724052-612x612.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="238.0" layoutY="9.0" prefHeight="127.0" prefWidth="817.0" text="DOGS PARADISE">
+         <font>
+            <Font name="System Bold" size="96.0" />
+         </font>
+      </Label>
+      <Button layoutX="66.0" layoutY="393.0" mnemonicParsing="false" onAction="#btnOnActionSuppliers" prefHeight="56.0" prefWidth="174.0" style="-fx-background-radius: 50; -fx-background-color: black;" text="Suppliers" textFill="#f8eaea">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="66.0" layoutY="316.0" mnemonicParsing="false" onAction="#btnOnActionCustomer" prefHeight="56.0" prefWidth="174.0" style="-fx-background-radius: 50; -fx-background-color: black;" text="Customer" textFill="#f2eded">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="59.0" layoutY="656.0" mnemonicParsing="false" onAction="#placeOrderOnAction" prefHeight="72.0" prefWidth="360.0" style="-fx-background-color: black; -fx-background-radius: 70;" text="Place Order" textFill="#f8efef">
+         <font>
+            <Font name="System Bold Italic" size="44.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor></Button>
+      <Separator layoutX="228.0" layoutY="128.0" prefHeight="20.0" prefWidth="774.0" style="-fx-background-color: #f53b57;" />
+      <Label fx:id="lblTime" layoutX="187.0" layoutY="242.0" prefHeight="56.0" prefWidth="83.0" />
+      <Label fx:id="lblDate" layoutX="187.0" layoutY="186.0" prefHeight="40.0" prefWidth="83.0" />
+      <Label fx:id="dateAndTime" layoutX="64.0" layoutY="148.0" prefHeight="141.0" prefWidth="487.0">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Label>
+      <Label layoutX="349.0" layoutY="316.0" prefHeight="63.0" prefWidth="193.0" style="-fx-background-color: black;" text="     Product" textFill="#fffefe">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbProduct3" layoutX="349.0" layoutY="379.0" onAction="#OnActionOpen3" prefHeight="56.0" prefWidth="193.0" style="-fx-background-color: white;" />
+      <Button layoutX="66.0" layoutY="504.0" mnemonicParsing="false" onAction="#btnOnActionorders" prefHeight="56.0" prefWidth="174.0" style="-fx-background-radius: 50; -fx-background-color: black;" text="Orders" textFill="#f8eaea">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1200.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="907.0" fitWidth="1211.0" layoutX="-7.0" layoutY="-2.0" pickOnBounds="true">
+         <image>
+            <Image url="@../Assets/istockphoto-470724052-612x612.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="200.0" layoutY="42.0" prefHeight="118.0" prefWidth="805.0" text="DOGS PARADISE" textFill="#0e5ecf">
+         <font>
+            <Font name="System Bold Italic" size="96.0" />
+         </font>
+      </Label>
+      <Button layoutX="77.0" layoutY="404.0" mnemonicParsing="false" onAction="#OnClickActionLogin" prefHeight="116.0" prefWidth="302.0" style="-fx-background-radius: 100; -fx-background-color: black;" text="LOGIN" textFill="#e0deeb">
+         <font>
+            <Font name="System Bold" size="52.0" />
+         </font>
+      </Button>
+      <Label fx:id="time" layoutX="55.0" layoutY="233.0" onDragDetected="#time" prefHeight="81.0" prefWidth="559.0" textFill="#363434">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
